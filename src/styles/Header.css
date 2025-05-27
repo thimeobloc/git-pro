@@ -2,36 +2,53 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 12px 30px;
     background-color: #001F3F; /* gris foncé */
     color: white;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   
   .logo-container {
     display: flex;
     align-items: center;
+    gap: 12px;
   }
   
   .logo {
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
+    width: 42px;
+    height: 42px;
+  }
+  
+  .logo-container h1 {
+    font-weight: 700;
+    font-size: 1.6rem;
+    margin: 0;
+    letter-spacing: 1px;
   }
   
   .nav-links {
     list-style: none;
     display: flex;
-    gap: 15px;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
   }
   
   .nav-links li a {
     color: white;
     text-decoration: none;
     font-weight: 600;
+    font-size: 1.1rem;
+    padding: 6px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
   }
   
-  .nav-links li a:hover {
-    text-decoration: underline;
+  .nav-links li a:hover,
+  .nav-links li a:focus {
+    background-color: #F05032; /* orange Git */
+    color: white;
+    outline: none;
   }
   

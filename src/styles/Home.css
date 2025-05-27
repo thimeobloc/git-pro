@@ -1,53 +1,65 @@
 .home {
-    position: relative; /* <-- Important pour les images aléatoires */
     max-width: 700px;
     margin: 40px auto;
-    padding: 0 20px;
+    padding: 20px 30px;
     font-family: Arial, sans-serif;
-    color: #333;
-    min-height: 100vh; /* pour forcer une hauteur et laisser les branches s'animer */
-    overflow: hidden;   /* pour éviter les débordements d'images */
+    color: white;
+    min-height: 100vh;
+    background-color: #001F3F; /* même couleur que le header */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
   }
   
-  
   .home h2 {
-    color: #F05032;
-    text-align: center;
-    margin-bottom: 20px;
+    color: white;
+    font-weight: 700;
+    font-size: 2.2rem;
+    margin-bottom: 10px;
   }
   
   .levels, .about {
-    margin-top: 30px;
+    width: 100%;
+    max-width: 600px;
+    background-color: #003366; /* un bleu un peu plus clair pour les sections */
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    text-align: left;
   }
   
-  .levels ul {
-    list-style: disc inside;
-    margin-left: 20px;
+  .levels h3, .about h3 {
+    color: #F05032; /* orange Git */
+    margin-bottom: 15px;
   }
   
-  .levels li {
-    margin-bottom: 8px;
-  }
-
-  .branch-image {
-    position: absolute;
-    width: 80px;
-    height: auto;
-    opacity: 0;
-    animation: fadeInOut 4s ease-in-out forwards;
-    pointer-events: none;
-    z-index: 0;
+  .levels p {
+    color: #ddd;
+    font-size: 1.1rem;
+    line-height: 1.4;
   }
   
-  @keyframes fadeInOut {
-    0% { opacity: 0; transform: scale(0.8); }
-    20% { opacity: 1; transform: scale(1); }
-    80% { opacity: 1; transform: scale(1); }
-    100% { opacity: 0; transform: scale(1.1); }
+  .levels-link {
+    color: #F05032; /* orange Git */
+    font-weight: 700;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: color 0.3s ease;
   }
   
-  .home > *:not(.branch-image) {
-    position: relative;
-    z-index: 1;
+  .levels-link:hover,
+  .levels-link:focus {
+    color: #FF6B3C; /* un orange un peu plus clair au hover */
+    outline: none;
+  }
+  
+  .about p {
+    color: #ddd;
+    font-size: 1.1rem;
+    line-height: 1.5;
   }
   
