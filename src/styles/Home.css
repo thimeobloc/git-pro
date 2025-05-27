@@ -1,0 +1,53 @@
+.home {
+    position: relative; /* <-- Important pour les images aléatoires */
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 0 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    min-height: 100vh; /* pour forcer une hauteur et laisser les branches s'animer */
+    overflow: hidden;   /* pour éviter les débordements d'images */
+  }
+  
+  
+  .home h2 {
+    color: #F05032;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .levels, .about {
+    margin-top: 30px;
+  }
+  
+  .levels ul {
+    list-style: disc inside;
+    margin-left: 20px;
+  }
+  
+  .levels li {
+    margin-bottom: 8px;
+  }
+
+  .branch-image {
+    position: absolute;
+    width: 80px;
+    height: auto;
+    opacity: 0;
+    animation: fadeInOut 4s ease-in-out forwards;
+    pointer-events: none;
+    z-index: 0;
+  }
+  
+  @keyframes fadeInOut {
+    0% { opacity: 0; transform: scale(0.8); }
+    20% { opacity: 1; transform: scale(1); }
+    80% { opacity: 1; transform: scale(1); }
+    100% { opacity: 0; transform: scale(1.1); }
+  }
+  
+  .home > *:not(.branch-image) {
+    position: relative;
+    z-index: 1;
+  }
+  

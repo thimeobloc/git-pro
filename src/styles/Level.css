@@ -1,0 +1,70 @@
+.level-page {
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    min-height: 100vh;
+    background-color: #fdfdfd;
+}
+
+.level-page h2 {
+    color: #F05032;
+    margin-bottom: 30px;
+}
+
+.level-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.level-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.3s ease;
+}
+
+.level-card:hover {
+    transform: scale(1.05);
+}
+
+.level-image {
+    width: 120px;
+    height: auto;
+    margin-bottom: 10px;
+    border: 3px solid #001F3F; /* contour rouge */
+    border-radius: 8px;         /* coins arrondis */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); /* légère ombre */
+    transition: border-color 0.3s ease;
+}
+
+.level-card a {
+    color: #001F3F;
+    text-decoration: none; /* pas de soulignement */
+    font-weight: bold;
+    position: relative;
+    padding-right: 20px; /* espace pour la flèche */
+    transition: color 0.3s ease;
+}
+
+.level-card a::after {
+    content: '→'; /* flèche */
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: normal;
+}
+
+.level-card a:hover {
+    color: #F05032; /* tu peux changer la couleur au hover si tu veux */
+}
+
+
+.level-title {
+    font-size: 18px;
+    font-weight: bold;
+}

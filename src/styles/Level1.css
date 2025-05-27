@@ -1,0 +1,85 @@
+/* Corps principal */
+.level1-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(to bottom right, #1e3c72, #2a5298);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+  }
+  
+  /* Chrono fixé en haut */
+  .timer {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(4px);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    z-index: 10;
+  }
+  
+  /* Bouton "Démarrer" */
+  .start-button {
+    padding: 15px 40px;
+    font-size: 1.5rem;
+    color: #fff;
+    background: #ff6f61;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
+    margin-top: 100px; /* pour éloigner un peu du chrono */
+  }
+  
+  .start-button:hover {
+    background: #ff4b3e;
+    transform: scale(1.05);
+  }
+  
+  .start-button:active {
+    transform: scale(0.98);
+  }
+
+  /* Ajoute ces styles à ton fichier Level1.css */
+
+  .answer-button {
+    padding: 12px 25px;
+    font-size: 1rem; /* taille de texte réduite */
+    margin: 10px;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+  }
+  
+  
+  /* Bordure verte si bonne réponse sélectionnée */
+  .answer-button.correct {
+    border-color: #4CAF50; /* vert */
+    background-color: #e6f4ea; /* optionnel : fond vert clair */
+  }
+  
+  /* Bordure rouge si mauvaise réponse sélectionnée */
+  .answer-button.incorrect {
+    border-color: #f44336; /* rouge */
+    background-color: #fdecea; /* optionnel : fond rouge clair */
+  }
+  
+  /* Optionnel: désactiver le hover quand la réponse est déjà sélectionnée */
+  .answer-button:disabled {
+    cursor: not-allowed;
+    opacity: 0.7;
+  }
+  
+  
