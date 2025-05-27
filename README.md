@@ -1,36 +1,70 @@
-Git Pro
+# Getting Started with Create React App
 
-Git Pro est une application web d'entraînement aux commandes Git, conçue pour apprendre et pratiquer Git via des quiz interactifs. Ce site propose quatre niveaux de difficulté pour tester tes connaissances, allant des questions à choix multiples simples jusqu’à un niveau avancé où il faut écrire la réponse.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Fonctionnalités principales
-Quatre niveaux de difficulté :
+## Available Scripts
 
-Niveau 1 : QCM avec 2 choix de réponse.
+In the project directory, you can run:
 
-Niveau 2 : QCM avec 4 choix de réponse.
+### `npm start`
 
-Niveau 3 : QCM avec 8 choix de réponse.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-Niveau Hard : Réponse écrite par l’utilisateur.
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-Entraînement rapide : réponds à 10 questions par session.
+### `npm test`
 
-Chronomètre intégré pour mesurer ta rapidité.
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-Recommencer à volonté sans inscription ni compte.
+### `npm run build`
 
-Interface simple et accessible pour tous, responsive design.
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-But du projet :
-Permettre à toute personne souhaitant apprendre Git de s’entraîner efficacement avec des questions progressives, dans un format ludique et sans complications administratives.
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-Technologies utilisées :
-React.js
-HTML / CSS
-JavaScript
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-Usage :
-Choisis un niveau.
-Réponds aux questions.
-Termine 10 questions le plus rapidement possible.
-Visualise ton temps et recommence pour t’améliorer.
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
